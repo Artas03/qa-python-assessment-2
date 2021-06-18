@@ -1,7 +1,5 @@
-def two(number):
-    if number%1 == 0 and number%number == 0:
-        return True
+def four(string1, string2):
+    list_1 = [string1.split()]
+    list_2 = [string2.split()]
 
-    return False
-
-print(two(3))
+print(four('hello','meow'), list_1)

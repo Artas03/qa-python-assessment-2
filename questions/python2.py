@@ -31,7 +31,12 @@
 # How does a for loop iterate through a string?
 
 def one(string):
-    return ""
+    string.split()
+    list = []
+    for i in range(len(string)):
+        list.append(string[i]*3)
+
+    return "".join(list)
 
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -51,9 +56,12 @@ def one(string):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
 
-def two(number):
-    return False
-
+def two(input):
+    for i in range(2,input+1):
+        if i == input:
+            return True
+        elif input%i == 0:
+            return False
 # -------------------------------------------------------------------------------------------------------------------------------------------------
 
     # <QUESTION 3>
